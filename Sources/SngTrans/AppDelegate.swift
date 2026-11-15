@@ -86,6 +86,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(item("Ghi chú và chặn app…", #selector(openManager)))
         menu.addItem(item("Cấp quyền Trợ năng…", #selector(openAccessibility)))
         menu.addItem(item("Kiểm tra cập nhật…", #selector(checkUpdate)))
+        menu.addItem(item("Trang tải và hướng dẫn…", #selector(openSite)))
         menu.addItem(.separator())
         menu.addItem(item("Thoát", #selector(quit), key: "q"))
         statusItem.menu = menu
@@ -135,6 +136,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc private func openManager() { ManagerWindow.show() }
+    @objc private func openSite() { NSWorkspace.shared.open(Links.site) }
     @objc private func checkUpdate() { Updater.check(silent: false) }
 
     @objc private func quit() { NSApp.terminate(nil) }

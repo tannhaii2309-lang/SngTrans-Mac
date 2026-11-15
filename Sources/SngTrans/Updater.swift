@@ -2,7 +2,7 @@ import AppKit
 
 /// Kiểm tra bản mới trên GitHub Releases; có bản mới thì mở link tải .dmg.
 enum Updater {
-    static let repo = "tannhaii2309-lang/macsng"
+    static let repo = Links.repo
 
     static func check(silent: Bool) {
         Task {
@@ -25,7 +25,7 @@ enum Updater {
                         a.addButton(withTitle: "Để sau")
                         NSApp.activate(ignoringOtherApps: true)
                         if a.runModal() == .alertFirstButtonReturn {
-                            NSWorkspace.shared.open(URL(string: "https://github.com/\(repo)/releases/latest/download/SngTrans.dmg")!)
+                            NSWorkspace.shared.open(Links.dmg)
                         }
                     }
                 } else if !silent {

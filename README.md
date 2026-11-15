@@ -1,5 +1,8 @@
 # SngTrans cho macOS (Swift)
 
+[**⬇ Tải SngTrans cho Mac**](https://github.com/tannhaii2309-lang/macsng/releases/latest/download/SngTrans.dmg)
+(file `.dmg`, macOS 13 trở lên, chip Apple và Intel) · [Trang tải và hướng dẫn](https://tannhaii2309-lang.github.io/macsng/)
+
 Chạy ngầm ở thanh menu. Bôi đen chữ ở bất kỳ app nào là hiện thẻ dịch ngay cạnh con trỏ.
 
 ## Tạo app
@@ -45,5 +48,6 @@ Bản Mac không chiếm mục "Latest", nên link tải và tự cập nhật c
       Store.swift             ghi chú, danh sách chặn app, xuất CSV
       ManagerWindow.swift     cửa sổ Ghi chú / Chặn app
       Updater.swift           kiểm tra bản mới trên GitHub Releases
+      Links.swift             các đường link (repo, trang web, link tải .dmg)
 
 Chưa có so với bản Windows: đổi phím tắt trong cài đặt và tự thay app khi cập nhật (hiện chỉ mở link tải).
